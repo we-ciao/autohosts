@@ -8,31 +8,31 @@ goto :eof
 :http
 color 2f
 ping -n 1 -w 500 1.1.1.1>nul 
-echo °Ã°Ã    °Ã°Ã  °Ã°Ã°Ã      °Ã°Ã°Ã°Ã  °Ã°Ã°Ã°Ã°Ã    °Ã°Ã°Ã°Ã
-echo   °Ã    °Ã  °Ã      °Ã  °Ã      °Ã  °Ã  °Ã  °Ã  °Ã      °Ã
-echo   °Ã    °Ã  °Ã      °Ã  °Ã              °Ã      °Ã
-echo   °Ã°Ã°Ã°Ã  °Ã      °Ã    °Ã°Ã          °Ã        °Ã°Ã
-echo   °Ã    °Ã  °Ã      °Ã        °Ã        °Ã            °Ã
-echo   °Ã    °Ã  °Ã      °Ã          °Ã      °Ã              °Ã
-echo   °Ã    °Ã  °Ã      °Ã  °Ã      °Ã      °Ã      °Ã      °Ã
-echo °Ã°Ã    °Ã°Ã  °Ã°Ã°Ã    °Ã°Ã°Ã°Ã      °Ã°Ã°Ã    °Ã°Ã°Ã°Ã
+echo ‚àö‚àö    ‚àö‚àö  ‚àö‚àö‚àö      ‚àö‚àö‚àö‚àö  ‚àö‚àö‚àö‚àö‚àö    ‚àö‚àö‚àö‚àö
+echo   ‚àö    ‚àö  ‚àö      ‚àö  ‚àö      ‚àö  ‚àö  ‚àö  ‚àö  ‚àö      ‚àö
+echo   ‚àö    ‚àö  ‚àö      ‚àö  ‚àö              ‚àö      ‚àö
+echo   ‚àö‚àö‚àö‚àö  ‚àö      ‚àö    ‚àö‚àö          ‚àö        ‚àö‚àö
+echo   ‚àö    ‚àö  ‚àö      ‚àö        ‚àö        ‚àö            ‚àö
+echo   ‚àö    ‚àö  ‚àö      ‚àö          ‚àö      ‚àö              ‚àö
+echo   ‚àö    ‚àö  ‚àö      ‚àö  ‚àö      ‚àö      ‚àö      ‚àö      ‚àö
+echo ‚àö‚àö    ‚àö‚àö  ‚àö‚àö‚àö    ‚àö‚àö‚àö‚àö      ‚àö‚àö‚àö    ‚àö‚àö‚àö‚àö
 echo -----------------------------------------------------------
 echo.
 ping -n 1 -w 500 1.1.1.1>nul 
-echo »Áπ˚∞≤»´»Ìº˛Ã·–—ªÚ–Ë“™π‹¿Ì‘±»®œﬁ«Î‘ –Ì
+echo Â¶ÇÊûúÂÆâÂÖ®ËΩØ‰ª∂ÊèêÈÜíÊàñÈúÄË¶ÅÁÆ°ÁêÜÂëòÊùÉÈôêËØ∑ÂÖÅËÆ∏
 echo.
-echo ±æπ§æﬂ≤ª≤˙…˙hosts,÷ª◊ˆhostsµƒ∞·‘Àπ§
-echo hostsŒƒº˛¿¥‘¥”⁄ @googlehosts ∞Ê»®À˘”–
+echo Êú¨Â∑•ÂÖ∑‰∏ç‰∫ßÁîühosts,Âè™ÂÅöhostsÁöÑÊê¨ËøêÂ∑•
+echo hostsÊñá‰ª∂Êù•Ê∫ê‰∫é @googlehosts ÁâàÊùÉÊâÄÊúâ
 echo.
 ping -n 1 -w 2000 1.1.1.1>nul 
-echo ƒø±Íµÿ÷∑: "%~f2"
+echo ÁõÆÊ†áÂú∞ÂùÄ: "%~f2"
 echo.
-echo ’˝‘⁄œ¬‘ÿ£¨«Î…‘∫Û...
+echo Ê≠£Âú®‰∏ãËΩΩÔºåËØ∑Á®çÂêé...
 echo.
 cscript -nologo -e:jscript "%~f0" "%~1" "%~2"
 
 
-echo ≥…π¶!
+echo ÊàêÂäü!
 echo.----------------------------------------------------------- 
 ipconfig /flushdns
 echo.----------------------------------------------------------- 
@@ -40,4 +40,4 @@ echo by weciao
 goto :eof  
 
 */
-var iLocal,iRemote,xPost,sGet;iLocal =WScript.Arguments(1); iRemote = WScript.Arguments(0); iLocal=iLocal.toLowerCase();iRemote=iRemote.toLowerCase();xPost = new ActiveXObject("Microsoft"+String.fromCharCode(0x2e)+"XMLHTTP");xPost.Open("GET",iRemote,0);xPost.Send();sGet = new ActiveXObject("ADODB"+String.fromCharCode(0x2e)+"Stream");sGet.Mode = 3;sGet.Type = 1; sGet.Open(); sGet.Write(xPost.responseBody);sGet.SaveToFile(iLocal,2); 
+var iLocal,iRemote,xPost,sGet;iLocal =WScript.Arguments(1); iRemote = WScript.Arguments(0); iLocal=iLocal.toLowerCase();iRemote=iRemote.toLowerCase();xPost = new ActiveXObject("Microsoft"+String.fromCharCode(0x2e)+"XMLHTTP");xPost.Open("GET",iRemote,0);xPost.Send();sGet = new ActiveXObject("ADODB"+String.fromCharCode(0x2e)+"Stream");sGet.Mode = 3;sGet.Type = 1; sGet.Open(); sGet.Write(xPost.responseBody);sGet.SaveToFile(iLocal,2);
