@@ -19,20 +19,20 @@ echo √√    √√  √√√    √√√√      √√√    √√√√
 echo -----------------------------------------------------------
 echo.
 ping -n 1 -w 500 1.1.1.1>nul 
-echo 如果安全软件提醒或需要管理员权限请允许
+echo.如果安全软件提醒或需要管理员权限请允许
 echo.
-echo 本工具不产生hosts,只做hosts的搬运工
-echo hosts文件来源于 @googlehosts 版权所有
+echo.本工具不产生hosts,只做hosts的搬运工
+echo.hosts文件来源于 @googlehosts 版权所有
 echo.
 ping -n 1 -w 2000 1.1.1.1>nul 
-echo 目标地址: "%~f2"
+echo.目标地址: "%~f2"
 echo.
-echo 正在下载，请稍后...
+echo.正在下载，请稍后...
 echo.
 cscript -nologo -e:jscript "%~f0" "%~1" "%~2"
 
 
-echo 成功!
+echo.成功!
 echo.----------------------------------------------------------- 
 ipconfig /flushdns
 echo.----------------------------------------------------------- 
